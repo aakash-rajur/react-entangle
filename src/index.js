@@ -48,11 +48,6 @@ class BroadcastHOC extends Component {
 
 	render() {
 		let {children} = this.props;
-		if (Array.isArray(children))
-			return children.map(child => child instanceof Function ? child({
-				emitter: this.broadcastMessage,
-				data: this.state.message
-			}) : child);
 		if (children instanceof Function)
 			return children({
 				emitter: this.broadcastMessage,

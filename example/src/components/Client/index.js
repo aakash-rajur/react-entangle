@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 
 import BroadcastHOC from 'react-entangle';
@@ -37,8 +37,11 @@ class Client extends Component {
 					placeholder='Add Channels' max={4}
 					onChange={channels => this.setState({channels})}/>
 				<BroadcastHOC channels={this.state.channels}>
-					{({data}) => <MessageList key={0} message={data}/>}
-					{({emitter}) => <SendInput key={1} emitter={emitter} channels={this.state.channels}/>}
+					{({data, emitter}) =>
+						<Fragment>
+							<MessageList message={data}/>
+							<SendInput emitter={emitter} channels={this.state.channels}/>
+						</Fragment>}
 				</BroadcastHOC>
 			</Card>
 		);
