@@ -1,7 +1,13 @@
 {
   "name": "react-entangle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HOC enabling components to communicate without any shared contexts using native BroadcastChannel API",
+  "keywords": [
+    "react",
+    "broadcast",
+    "no-context",
+    "message"
+  ],
   "author": "aakashRajur",
   "license": "MIT",
   "repository": "aakashRajur/react-entangle",
