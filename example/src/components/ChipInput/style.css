@@ -1,0 +1,19 @@
+.MuiInput-root-52.chip-input {
+    padding: 8px 0;
+    box-sizing: border-box;
+    min-height: 52px;
+    display: inline-block;
+}
+
+.chip {
+    margin: 2px 4px;
+    display: inline-block;
+}
+
+.chip-input input {
+    display: inline-block;
+    border: none;
+    outline: none;
+    margin: 2px 4px;
+    width: 100px;
+}

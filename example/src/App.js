@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React, {Component, Fragment} from 'react';
 
-import ExampleComponent from 'react-entangle'
+
+import Client from "./components/Client";
+
 
 export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
+	render() {
+		return (
+			<Fragment>
+				<Client client={'Alice'} defaultChannel={['hello', 'world']}/>
+				<Client client={'Bob'} defaultChannel={['hello', 'channel1']}/>
+				<Client client={'Charlie'} defaultChannel={['world']}/>
+				<Client client={'Eve'} defaultChannel={['channel1', 'world']}/>
+			</Fragment>
+		);
+	}
 }

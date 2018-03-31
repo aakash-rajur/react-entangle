@@ -1,0 +1,28 @@
+.messages {
+    overflow-y: auto;
+}
+
+.no-messages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.message-input {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.select-channel {
+    width: 125px;
+    margin: auto 8px;
+}
+
+.MuiButton-mini-77.send {
+    margin-left: 16px;
+}
