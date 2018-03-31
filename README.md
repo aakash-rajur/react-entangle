@@ -5,9 +5,11 @@
 [![NPM](https://img.shields.io/npm/v/react-entangle.svg)](https://www.npmjs.com/package/react-entangle) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
-I found the native API amusing and wondered why hasn't anyone implemented an HOC in react for this.  
-Here is a draft implementation. I am not sure where or how this API should be used in the react ecosystem,  
+I found the native API amusing and wondered why has not anyone implemented an HOC in react for this.  
+Here is a draft implementation in react. I am not sure where or how this API should be used in the react ecosystem,  
 please enlighten me if you find any meaning ful implementation.
+
+[BroadcastChannel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API)
 
 
 ## Demo
@@ -87,6 +89,11 @@ you need to provide a function as a child which will receive data and emitter as
 ```jsx harmony
 ({emitter, data}) => <YourComponent emitter={emitter} data={data}/>
 ```
+
+## Note
+Objects emitted are clones and not references.  
+Functions and errors cannot be sent over  
+[Further Reading](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm)
 
 ## [Licence (MIT)](https://github.com/aakashRajur/react-entangle/blob/master/LICENCE)
 Feel free to use the source anyhow you want.

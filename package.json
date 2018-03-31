@@ -1,6 +1,6 @@
 {
   "name": "react-entangle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "HOC enabling components to communicate without any shared contexts using native BroadcastChannel API",
   "keywords": [
     "react",
