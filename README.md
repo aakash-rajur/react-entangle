@@ -26,9 +26,9 @@ npm install --save react-entangle
 ```jsx harmony
 import React, { Component, Fragment } from 'react';
 import BroadcastHOC from 'react-entangle';
-import ComponentA from './ComponentA;
-import ComponentB from './ComponentB;
-import ComponentC from './ComponentC;
+import ComponentA from './ComponentA';
+import ComponentB from './ComponentB';
+import ComponentC from './ComponentC';
 import OtherComponent './OtherComponent';
 
 class App extends Component {
@@ -53,6 +53,7 @@ class App extends Component {
 > ComponentC.js
 ```jsx harmony
 import React, { Component } from 'react';
+
 class ComponentC extends Component {
   constructor(props){
     super(props);
