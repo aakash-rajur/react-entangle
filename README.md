@@ -9,6 +9,11 @@ I found the native API amusing and wondered why hasn't anyone implemented an HOC
 Here is a draft implementation. I am not sure where or how this API should be used in the react ecosystem,  
 please enlighten me if you find any meaning ful implementation.
 
+
+## Demo
+https://aakashrajur.github.io/react-entangle/
+
+
 ## Install
 
 ```bash
